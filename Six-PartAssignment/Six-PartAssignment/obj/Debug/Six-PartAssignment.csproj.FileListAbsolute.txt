@@ -1,0 +1,7 @@
+C:\Users\Mom\Desktop\Basic_C#_Programs\Six-PartAssignment\Six-PartAssignment\obj\Debug\Six-PartAssignment.csproj.AssemblyReference.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\Six-PartAssignment\Six-PartAssignment\obj\Debug\Six-PartAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\Six-PartAssignment\Six-PartAssignment\bin\Debug\Six-PartAssignment.exe.config
+C:\Users\Mom\Desktop\Basic_C#_Programs\Six-PartAssignment\Six-PartAssignment\bin\Debug\Six-PartAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\Six-PartAssignment\Six-PartAssignment\bin\Debug\Six-PartAssignment.pdb
+C:\Users\Mom\Desktop\Basic_C#_Programs\Six-PartAssignment\Six-PartAssignment\obj\Debug\Six-PartAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\Six-PartAssignment\Six-PartAssignment\obj\Debug\Six-PartAssignment.pdb
