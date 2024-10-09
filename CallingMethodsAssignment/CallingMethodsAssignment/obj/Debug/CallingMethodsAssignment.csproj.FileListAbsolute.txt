@@ -1,0 +1,7 @@
+C:\Users\Mom\Desktop\Basic_C#_Programs\CallingMethodsAssignment\CallingMethodsAssignment\obj\Debug\CallingMethodsAssignment.csproj.AssemblyReference.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\CallingMethodsAssignment\CallingMethodsAssignment\obj\Debug\CallingMethodsAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\CallingMethodsAssignment\CallingMethodsAssignment\bin\Debug\CallingMethodsAssignment.exe.config
+C:\Users\Mom\Desktop\Basic_C#_Programs\CallingMethodsAssignment\CallingMethodsAssignment\bin\Debug\CallingMethodsAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\CallingMethodsAssignment\CallingMethodsAssignment\bin\Debug\CallingMethodsAssignment.pdb
+C:\Users\Mom\Desktop\Basic_C#_Programs\CallingMethodsAssignment\CallingMethodsAssignment\obj\Debug\CallingMethodsAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\CallingMethodsAssignment\CallingMethodsAssignment\obj\Debug\CallingMethodsAssignment.pdb
