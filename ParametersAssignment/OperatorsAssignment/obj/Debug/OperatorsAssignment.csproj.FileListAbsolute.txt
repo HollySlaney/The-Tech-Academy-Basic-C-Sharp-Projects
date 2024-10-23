@@ -1,0 +1,7 @@
+C:\Users\Mom\Desktop\Basic_C#_Programs\OperatorsAssignment\OperatorsAssignment\bin\Debug\OperatorsAssignment.exe.config
+C:\Users\Mom\Desktop\Basic_C#_Programs\OperatorsAssignment\OperatorsAssignment\bin\Debug\OperatorsAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\OperatorsAssignment\OperatorsAssignment\bin\Debug\OperatorsAssignment.pdb
+C:\Users\Mom\Desktop\Basic_C#_Programs\OperatorsAssignment\OperatorsAssignment\obj\Debug\OperatorsAssignment.csproj.AssemblyReference.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\OperatorsAssignment\OperatorsAssignment\obj\Debug\OperatorsAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\OperatorsAssignment\OperatorsAssignment\obj\Debug\OperatorsAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\OperatorsAssignment\OperatorsAssignment\obj\Debug\OperatorsAssignment.pdb
