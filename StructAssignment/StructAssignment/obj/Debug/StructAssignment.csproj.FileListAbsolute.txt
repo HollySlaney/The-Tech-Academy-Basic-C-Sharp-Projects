@@ -1,0 +1,7 @@
+C:\Users\Mom\Desktop\Basic_C#_Programs\StructAssignment\StructAssignment\bin\Debug\StructAssignment.exe.config
+C:\Users\Mom\Desktop\Basic_C#_Programs\StructAssignment\StructAssignment\bin\Debug\StructAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\StructAssignment\StructAssignment\bin\Debug\StructAssignment.pdb
+C:\Users\Mom\Desktop\Basic_C#_Programs\StructAssignment\StructAssignment\obj\Debug\StructAssignment.csproj.AssemblyReference.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\StructAssignment\StructAssignment\obj\Debug\StructAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\StructAssignment\StructAssignment\obj\Debug\StructAssignment.exe
+C:\Users\Mom\Desktop\Basic_C#_Programs\StructAssignment\StructAssignment\obj\Debug\StructAssignment.pdb
