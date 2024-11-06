@@ -1,0 +1,2 @@
+C:\Users\Mom\Desktop\Basic_C#_Programs\ConstructorAssignment\ConstructorAssignment\obj\Debug\ConstructorAssignment.csproj.AssemblyReference.cache
+C:\Users\Mom\Desktop\Basic_C#_Programs\ConstructorAssignment\ConstructorAssignment\obj\Debug\ConstructorAssignment.csproj.CoreCompileInputs.cache
