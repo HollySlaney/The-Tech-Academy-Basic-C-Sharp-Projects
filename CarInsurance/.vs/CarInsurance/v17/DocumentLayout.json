@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mom\\Desktop\\Basic_C#_Programs\\CarInsurance\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBF0D5B8-0D2A-4B02-9AC3-D53F4EEA61CC}|CarInsurance\\CarInsurance.csproj|c:\\users\\mom\\desktop\\basic_c#_programs\\carinsurance\\carinsurance\\controllers\\insureecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBF0D5B8-0D2A-4B02-9AC3-D53F4EEA61CC}|CarInsurance\\CarInsurance.csproj|solutionrelative:carinsurance\\controllers\\insureecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InsureeController.cs",
+              "DocumentMoniker": "C:\\Users\\Mom\\Desktop\\Basic_C#_Programs\\CarInsurance\\CarInsurance\\Controllers\\InsureeController.cs",
+              "RelativeDocumentMoniker": "CarInsurance\\Controllers\\InsureeController.cs",
+              "ToolTip": "C:\\Users\\Mom\\Desktop\\Basic_C#_Programs\\CarInsurance\\CarInsurance\\Controllers\\InsureeController.cs",
+              "RelativeToolTip": "CarInsurance\\Controllers\\InsureeController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwFQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T03:55:38.675Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

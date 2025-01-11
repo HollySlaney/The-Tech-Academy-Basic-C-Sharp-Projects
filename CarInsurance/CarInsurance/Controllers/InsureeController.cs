@@ -1,15 +1,65 @@
 ﻿using CarInsurance.Models;
+using System.Data;
+using System.Data.Entity;
+using System.Net;
+using System.Web;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Web.Mvc;
 
-namespace CarInsurance.Controllers
+namespace CarInsurance.Models
 {
     public class InsureeController : Controller
     {
         private InsuranceEntities db = new InsuranceEntities();
-        private readonly string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        //GET: Insuree
+        public ActionResult Index()
+        {
+            return View(db.Insurees.ToList());
+        }
+        public ActionResult Admin()
+        {
+            return View(db.Insurees.ToList<CarInsurance.Models.Insuree>());
+        }
+
+        //GET: Insuree/Details/5
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Insuree insuree = db.Insurees.Find(id);
+            if (insuree == null)
+            {
+                return HttpNotFound();
+            }
+            return View(insuree);
+        }
+
+        //GET: Insuree/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        //POST: Insuree/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "Id, FirstName, LastName, EmailAddress, DateOfBirth, CarYear, CarMake, CarModel, DUI, SpeedingTickets, FullCoverage, Quote")] Insuree insuree)
+        {
+            if(ModelState.IsValid)
+            {
+                insuree.Quote = CalculateQuote(insuree);
+                db.Insurees.Add(insuree);
+                db.SaveChanges();
+                return RedirectToAction("Admin");
+            }
+            return View(insuree);
+        }
 
         private decimal CalculateQuote(Insuree insuree)
         {
@@ -74,26 +124,70 @@ namespace CarInsurance.Controllers
 
             return insuree.Quote;
         }
-        public ActionResult Admin()
+
+        //GET: Insuree/Edit/5
+        public ActionResult Edit(int? id)
         {
-            string queryString = @"SELECT Id, FirstName, LastName, EmailAddress from Insurees";
-            List<Insuree> insurees = new List<Insuree>();
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            if (id == null)
             {
-                SqlCommand command = new SqlCommand(queryString, connection);
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    var insuree = new Insuree();
-                    insuree.Id = Convert.ToInt32(reader["Id"]);
-                    insuree.FirstName = reader["FirstName"].ToString();
-                    insuree.LastName = reader["LastName"].ToString();
-                    insuree.EmailAddress = reader["EmailAddress"].ToString();
-                    insurees.Add(insuree);
-                }
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            return View(insurees);
+            Insuree insuree = db.Insurees.Find(id);
+            if (insuree == null)
+            {
+                return HttpNotFound();
+            }
+            return View(insuree);
+        }
+
+        //POST: Insuree/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "ID, FistName, LastName, EmailAddress, DateOfBirth, CarYear, CarMake, CarModel, DUI, SpeedingTickets, Full Coverage, Quote")] Insuree insuree)
+        {
+            if (ModelState.IsValid)
+            {
+                insuree.Quote = CalculateQuote(insuree);
+                db.Entry(insuree).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(insuree);
+        }
+
+        //GET: Insure/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Insuree insuree = db.Insurees.Find(id);
+            if (insuree == null)
+            {
+                return HttpNotFound();
+            }
+            return View(insuree);
+        }
+
+        //POST: Insuree/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Insuree insuree = db.Insurees.Find(id);
+            db.Insurees.Remove(insuree);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }
